@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B234788-39FD-9E9D-09FF-5702E5DDE89C" name=" język">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:13:04 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id jezyka" id="358AF6F7-F722-B364-3710-08ADCA82D1D2">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:13:39 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="31440F35-A788-2E57-1369-983382154075">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:13:13 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="podtyp" id="73AEE8D2-A24E-5354-EFFF-0706A20B3B22">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:13:18 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="07D92FF0-2E3F-60D2-2E25-C7F3E47DF8BE" name="Znany język PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:13:50 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>358AF6F7-F722-B364-3710-08ADCA82D1D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

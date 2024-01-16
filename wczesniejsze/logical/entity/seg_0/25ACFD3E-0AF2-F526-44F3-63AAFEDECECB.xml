@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25ACFD3E-0AF2-F526-44F3-63AAFEDECECB" name="towar">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 18:14:13 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>BEFF1384-DF2C-D8DC-8F9E-36F6C1442254</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="data przyjęcia na stan" id="3DBF2A44-3F34-C304-8E51-9CD935013978">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 18:14:32 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data zbycia" id="D358A3F7-9693-95C4-ECAC-BC2FE947BB5F">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 18:17:59 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="czy wrzucamy go do ewidencji środków trwałych" id="CA19BA06-1BC2-3CF6-5AD3-8FD053864F11">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 18:25:27 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

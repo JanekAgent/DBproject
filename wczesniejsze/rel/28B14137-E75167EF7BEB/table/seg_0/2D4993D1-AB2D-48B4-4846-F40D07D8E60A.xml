@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D4993D1-AB2D-48B4-4846-F40D07D8E60A" name="zatrudnienie">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>6124EB9D-5BB6-B013-4228-923631B7920E</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="data_rozpoczęcia" id="1FB86F98-533E-5768-95F5-19C8D707C001">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>64444AC1-BE64-3B0A-0C1A-1A7A2E1B9D72</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_zakończenia" id="F3D0033B-B2CC-9AEA-2B88-6DF2509E4549">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>547E0F1E-7D42-719D-976B-FA894CC05006</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zatrudnienie_ID" id="05BAAB1D-24FB-DFA5-511F-12322ECA11BA">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0EF30379-467F-8269-4A11-BDEAE8DB5323" name="zatrudnienie_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="05BAAB1D-24FB-DFA5-511F-12322ECA11BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

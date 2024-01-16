@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40E4CFFF-D4A3-989A-ADBF-ADF8C29CA7E8" name="asoscjacja_wyksztalcenia">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<ordsAlias>relation_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pracownik_id_prac" id="BFFFDC51-91BE-E426-DD1D-F6EA2C4DF0C7">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0EEB435-7C6A-B134-BB8E-B9593F8AB685" referredColumn="ED311442-B8A2-A67B-DD66-4EC723BC7B27"/>
+</associations>
+</Column>
+<Column name="wykształcenie_id_wykształcenia" id="CE65A3C9-8A43-3660-302A-6916F5F87D4D">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="986FC025-D257-6354-00E1-3A040F95195F" referredColumn="2CBECB86-311A-B610-1EFD-2353D0E52F3A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="689B11DF-BBC2-0560-8F6F-C198395F5420" name="Relation_1_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFFFDC51-91BE-E426-DD1D-F6EA2C4DF0C7"/>
+<colUsage columnID="CE65A3C9-8A43-3660-302A-6916F5F87D4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6887944E-705F-4296-918C-601B37B7C59E" name="Relation_1_pracownik_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>2C943FF3-FC08-BC60-16D8-971CC7612DB1</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFFFDC51-91BE-E426-DD1D-F6EA2C4DF0C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF34ABE6-B484-B99B-3879-B6F089978F45" name="Relation_1_wykształcenie_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>2C943FF3-FC08-BC60-16D8-971CC7612DB1</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE65A3C9-8A43-3660-302A-6916F5F87D4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

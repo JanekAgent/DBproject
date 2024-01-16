@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="12BACF2F-71E2-FBBC-27B3-B64D80A26556" containerWithKeyObject="63371A0E-F499-894C-B329-85E18D4B931E" localFKIndex="92CFE220-2D75-E7C7-60D1-F7DBE332FE9A" name="Relation_7_uprawnienia_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>8F39C288-B1E8-EC88-72E8-0AD4ADA50EF5</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<referredTableLongName>uprawnienia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>65C92193-5238-98CA-FFA3-9B0D6CCFC502</referredTableID>
+<keyObject>A67D2749-87B4-04CB-6196-33092246AC52</keyObject>
+<referredKeyID>A67D2749-87B4-04CB-6196-33092246AC52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_uprawnienia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

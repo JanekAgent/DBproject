@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1535F9F5-7C3D-1E9A-3EBB-7447E1E5E0C0" containerWithKeyObject="76D47D92-E1C5-8FFB-2EEC-5D4FF24CC29F" localFKIndex="8A4CA6EB-7906-14B8-5C6F-9055EBC768A9" name="faktura_księga_przychodu_i_rozchodu_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>3D6B629E-3676-1293-2E5F-3ED7AD98A919</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<referredTableLongName>księga_przychodu_i_rozchodu</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>086B21B0-94BA-034E-CB06-008403071780</referredTableID>
+<keyObject>8AD1720C-365A-8644-73C5-9C03DE8FE7AF</keyObject>
+<referredKeyID>8AD1720C-365A-8644-73C5-9C03DE8FE7AF</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_księgi</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

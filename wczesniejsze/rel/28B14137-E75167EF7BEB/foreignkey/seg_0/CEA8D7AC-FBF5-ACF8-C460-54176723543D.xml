@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CEA8D7AC-FBF5-ACF8-C460-54176723543D" containerWithKeyObject="7A7DC2B6-05E3-0640-3B24-5AB572668103" localFKIndex="5EBE26A1-F9FF-6869-41E3-0D4068F5381D" name="środek_trwały_towar_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>010FADBA-922D-34D8-DF4C-A86F2BA9574F</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<referredTableLongName>towar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>002C38DB-14E7-122A-E864-5A8EF41F318A</referredTableID>
+<keyObject>EA47C297-BBE7-79C6-C454-BFCF49E98957</keyObject>
+<referredKeyID>EA47C297-BBE7-79C6-C454-BFCF49E98957</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_produktu</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

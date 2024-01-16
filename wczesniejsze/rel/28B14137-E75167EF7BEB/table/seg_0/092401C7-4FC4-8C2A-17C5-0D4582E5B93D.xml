@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="092401C7-4FC4-8C2A-17C5-0D4582E5B93D" name="stanowisko">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>E13787C0-388F-B66B-D1B6-51D0EA787D5F</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_stanowiska" id="802E199A-ED79-08CA-1535-0FB96597A3EC">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>DF48D0E1-AA86-CD50-C669-92C0A74C138B</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="8CFDBE6C-8246-E542-E076-4B7D1ADE197B">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>920E18F1-9BC4-0911-74D3-31F463FF89CC</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78A0FE70-946D-F583-C70F-6E0CBDC3A3DA" name="stanowisko_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>493BF085-BFB5-9EA1-7C9B-7C5B66CCBD56</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802E199A-ED79-08CA-1535-0FB96597A3EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Znajomość jezyka" directorySegmentName="seg_0" id="842F1DA2-A7B9-CFE9-EE30-088247F603A1">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:25:06 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Zna jezyk</nameOnSource>
+<nameOnTarget>jest znany</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>5CB96495-8B78-AA00-7686-5868EDC7DF44</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4B234788-39FD-9E9D-09FF-5702E5DDE89C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

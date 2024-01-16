@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD5A4491-CCBA-42E1-123D-024C50DCE78A" name="płaca">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>A8043B7A-EFA2-BB2C-3AAD-A754A073C5ED</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_płacy" id="2B28DE75-8AAD-D31D-6898-FC1A3DB598E5">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>2139D940-3D50-32EA-7DD3-0CA27B3A5937</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="liczba_przepracowanych_godzin" id="11F9877A-471D-73F0-FAA6-3338A640E137">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>1D25C503-3125-68BF-36B5-856E24A2D8C4</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dodatki" id="B91963B6-EF55-1978-2F96-B6438F749481">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>C8B33C11-1334-0AF9-264E-653EBDE5563A</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nadgodziny" id="43938A24-49C9-346E-31C6-2FE258DA7633">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>323D1387-018A-BAC4-0127-B6A5CCFD9EEE</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ostateczna_kwota" id="FD89C701-39DC-307C-53BF-1414F0AAD7CA">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>244F5CE4-1748-C5F7-67BF-1879ACDE195B</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="księga_przychodu_i_rozchodu_id_księgi" id="B6507749-7CA2-943C-4508-43DAC9773511">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>CBF05E57-48EA-2672-19AA-E185E5865D83</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="164D54DB-AA31-7612-2814-17DB08630DD3" referredColumn="974D6430-EEEA-6D54-D3C0-93E8229661C0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13750A99-2C0F-1178-5E8C-0344D86BF125" name="płaca_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>112EA2F6-F5E1-4569-C144-795B0FF4A7EF</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B28DE75-8AAD-D31D-6898-FC1A3DB598E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6361447E-03B2-D1AB-90B6-C7067058E9B2" name="płaca_księga_przychodu_i_rozchodu_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>0BA574CB-B8DD-35AA-FE82-7031919939C0</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6507749-7CA2-943C-4508-43DAC9773511"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

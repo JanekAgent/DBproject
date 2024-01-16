@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA77BD9C-CFCE-E94D-E1DC-E734B2BC6815" name="rodzaj_towarów">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>54F688FB-F917-A003-6164-F29C37B12ACB</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rodzaju_towaru" id="6F0160AA-C7FD-ED67-2CE6-1B812240CD73">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>89DD848A-DE3D-225B-D196-7FCEE1578977</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="8B614905-E261-B782-B092-02A905E61E5E">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>AA420207-6B54-02BA-2E3D-0EFA99DCD954</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stawka_VAT" id="DECAA8EA-6AD3-03B9-4D46-FCBE7B1A11E4">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>CE6E95C3-7B8A-E2BD-A558-D2BDD2B373F5</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="produkt_id_produktu" id="AAAC74FB-23F8-C37A-C83E-AA1F364D0F18">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>575844C2-C4E6-8516-1AE3-4F3F1B240957</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="998FFCEC-1DE7-3DA8-D874-A90317129129" referredColumn="635A9AA6-5F9D-FA59-2C96-2D2E7FDC1855"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22315184-1B54-0239-E97E-F52F82A511DC" name="rodzaj_towarów_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>1D835CEE-C3A0-70A5-B453-6DEEF33A0930</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F0160AA-C7FD-ED67-2CE6-1B812240CD73"/>
+<colUsage columnID="DECAA8EA-6AD3-03B9-4D46-FCBE7B1A11E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E89C89DC-5775-5839-B072-32E51DBA3327" name="rodzaj_towarów_produkt_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>2587C0F0-CB28-25BF-0373-23B0BEC8A6E3</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAAC74FB-23F8-C37A-C83E-AA1F364D0F18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

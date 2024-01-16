@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54F688FB-F917-A003-6164-F29C37B12ACB" name="rodzaj towarów">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 09:20:19 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id rodzaju towaru" id="89DD848A-DE3D-225B-D196-7FCEE1578977">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 09:20:37 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="AA420207-6B54-02BA-2E3D-0EFA99DCD954">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 09:20:47 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stawka VAT" id="CE6E95C3-7B8A-E2BD-A558-D2BDD2B373F5">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 09:20:53 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_produktu" id="575844C2-C4E6-8516-1AE3-4F3F1B240957">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 09:21:45 UTC</createdTime>
+<generatorID>2587C0F0-CB28-25BF-0373-23B0BEC8A6E3</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<referedAttribute>634548E6-4B7B-6F42-3658-A6AEBBCD09A9</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D835CEE-C3A0-70A5-B453-6DEEF33A0930" name="rodzaj towarów PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 09:20:44 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>89DD848A-DE3D-225B-D196-7FCEE1578977</attributeRef>
+<attributeRef>CE6E95C3-7B8A-E2BD-A558-D2BDD2B373F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

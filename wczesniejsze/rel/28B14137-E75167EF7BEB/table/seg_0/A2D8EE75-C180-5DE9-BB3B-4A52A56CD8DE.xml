@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2D8EE75-C180-5DE9-BB3B-4A52A56CD8DE" name="asocjacja podwladnego">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<ordsAlias>relation_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pracownik_id_prac" id="CE37122B-3929-AA55-0A94-7118952E845D">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="221DA3F4-D38D-503A-B67F-2B8D82876923" referredColumn="ED311442-B8A2-A67B-DD66-4EC723BC7B27"/>
+</associations>
+</Column>
+<Column name="pracownik_id_prac1" id="E0F73FF0-71A3-7481-8925-AC200BEBA139">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42F97C38-63DB-FA9C-2711-9183017ED539" referredColumn="ED311442-B8A2-A67B-DD66-4EC723BC7B27"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42D51600-68E5-4E0A-59DF-080528329BBE" name="Relation_6_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE37122B-3929-AA55-0A94-7118952E845D"/>
+<colUsage columnID="E0F73FF0-71A3-7481-8925-AC200BEBA139"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57C41001-A533-B039-56BD-443D35382FA0" name="Relation_6_pracownik_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>8B1602A5-C906-3B21-920E-0B1B20D89BC8</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE37122B-3929-AA55-0A94-7118952E845D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE7380FB-96B0-6A49-D84A-3B7483D77AC7" name="Relation_6_pracownik_FKv1">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>8B1602A5-C906-3B21-920E-0B1B20D89BC8</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0F73FF0-71A3-7481-8925-AC200BEBA139"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

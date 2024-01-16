@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="430F16FA-E769-0AD5-AA45-66A57187B424" containerWithKeyObject="FB244209-16B6-B511-7E2E-5410C427D5CE" localFKIndex="09B3BC98-5DC3-652D-A441-E3F79C7DE051" name="Relation_17_umowa_pracownika_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>DADDB9AA-3123-89E3-41BA-8C9E66037385</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<referredTableLongName>umowa_pracownika</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7D0CEF26-820D-803B-1971-A23E9C9ADF52</referredTableID>
+<keyObject>CA77A51C-3126-3E39-9089-B3510A377B5C</keyObject>
+<referredKeyID>CA77A51C-3126-3E39-9089-B3510A377B5C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_umowy</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

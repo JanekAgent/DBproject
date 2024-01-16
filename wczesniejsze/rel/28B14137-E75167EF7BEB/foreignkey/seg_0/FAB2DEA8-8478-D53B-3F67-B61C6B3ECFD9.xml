@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FAB2DEA8-8478-D53B-3F67-B61C6B3ECFD9" containerWithKeyObject="086B21B0-94BA-034E-CB06-008403071780" localFKIndex="45E6CA2A-A6FC-8234-95F9-5802DCF7934B" name="księga_przychodu_i_rozchodu_koszt_zus_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>77B03570-61B2-45DA-FC84-3D32735088A0</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<referredTableLongName>koszt_zus</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>313B5141-C5B2-44D9-283E-78BA49E4D7D8</referredTableID>
+<keyObject>3B4B9139-45F3-79C3-3659-4F736AED3F07</keyObject>
+<referredKeyID>3B4B9139-45F3-79C3-3659-4F736AED3F07</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_kosztu_ZUS</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="164D54DB-AA31-7612-2814-17DB08630DD3" containerWithKeyObject="AD5A4491-CCBA-42E1-123D-024C50DCE78A" localFKIndex="6361447E-03B2-D1AB-90B6-C7067058E9B2" name="płaca_księga_przychodu_i_rozchodu_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>0BA574CB-B8DD-35AA-FE82-7031919939C0</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<referredTableLongName>księga_przychodu_i_rozchodu</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>086B21B0-94BA-034E-CB06-008403071780</referredTableID>
+<keyObject>8AD1720C-365A-8644-73C5-9C03DE8FE7AF</keyObject>
+<referredKeyID>8AD1720C-365A-8644-73C5-9C03DE8FE7AF</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_księgi</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

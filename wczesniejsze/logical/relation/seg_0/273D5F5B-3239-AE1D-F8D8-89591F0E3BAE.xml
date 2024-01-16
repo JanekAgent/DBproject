@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Umowa" directorySegmentName="seg_0" id="273D5F5B-3239-AE1D-F8D8-89591F0E3BAE">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-13 17:26:59 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<engineerTo>
+<item key="28B14137-5C94-3384-2CEF-E75167EF7BEB" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>jest zatrudniony na</nameOnSource>
+<nameOnTarget>jest podstawą do zatrudnienia</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F57F6654-9DBE-4C6E-78A3-6005D5E18D36</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6124EB9D-5BB6-B013-4228-923631B7920E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

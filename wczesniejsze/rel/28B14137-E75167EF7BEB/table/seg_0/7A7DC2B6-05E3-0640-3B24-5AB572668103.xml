@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A7DC2B6-05E3-0640-3B24-5AB572668103" name="środek_trwały">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>3DF40D50-29B0-982D-BFF2-30648410AF9D</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produktu" id="190E0779-D57D-2293-9723-C496AD23F029">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>634548E6-4B7B-6F42-3658-A6AEBBCD09A9</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEA8D7AC-FBF5-ACF8-C460-54176723543D" referredColumn="517B5C91-8063-014E-B4E0-115F7A7C66FC"/>
+</associations>
+</Column>
+<Column name="stawka_amortyzacji" id="ED6273B8-A0BA-5A6E-4529-9B91CE6E25AE">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>3CF2E44B-F42A-FBF1-BEC4-5CBA556DAD36</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18B7ED71-21DB-EE18-2AC0-795331505029" name="środek_trwały_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>FAABEEC0-7C9D-5AC9-DF3E-17057C6F28BF</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="190E0779-D57D-2293-9723-C496AD23F029"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EBE26A1-F9FF-6869-41E3-0D4068F5381D" name="środek_trwały_towar_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>010FADBA-922D-34D8-DF4C-A86F2BA9574F</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="190E0779-D57D-2293-9723-C496AD23F029"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

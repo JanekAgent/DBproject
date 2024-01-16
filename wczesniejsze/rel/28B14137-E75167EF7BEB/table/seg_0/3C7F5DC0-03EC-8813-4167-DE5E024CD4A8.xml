@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C7F5DC0-03EC-8813-4167-DE5E024CD4A8" name="asoscjacja_magazynu">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<ordsAlias>relation_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="towar_id_produktu" id="B21D787B-8C7D-8FF6-693D-8E27690421B4">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="332F01E6-BC1E-F9E1-7C5B-C699B7494CEC" referredColumn="517B5C91-8063-014E-B4E0-115F7A7C66FC"/>
+</associations>
+</Column>
+<Column name="magazyn_id_magazynu" id="CBE4CBD7-FD3E-EAE2-490D-AD04FAE1F741">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5E749A0-9ADA-CB61-F843-149CF19B1C36" referredColumn="3154D314-E9F7-5C8D-108D-FE858D69FB19"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ED25B32-53B7-3540-71CB-061FCDB16C0C" name="Relation_27_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B21D787B-8C7D-8FF6-693D-8E27690421B4"/>
+<colUsage columnID="CBE4CBD7-FD3E-EAE2-490D-AD04FAE1F741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FA2478C-35F7-FAF5-5BBE-EA2CEF934A4D" name="Relation_27_towar_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>297B6E81-EB27-B1C5-CC39-60B1AC20B9F3</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B21D787B-8C7D-8FF6-693D-8E27690421B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E13C0D56-8BB9-6693-D9AD-49E520D56C6E" name="Relation_27_magazyn_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>297B6E81-EB27-B1C5-CC39-60B1AC20B9F3</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBE4CBD7-FD3E-EAE2-490D-AD04FAE1F741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

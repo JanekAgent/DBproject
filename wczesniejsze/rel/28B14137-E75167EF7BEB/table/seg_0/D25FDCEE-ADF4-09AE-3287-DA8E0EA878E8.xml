@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D25FDCEE-ADF4-09AE-3287-DA8E0EA878E8" name="Znajomość_jezyka">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pracownik_id_prac" id="84AFC72F-50F8-9EA3-26A7-08F2CCDAF978">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CEED796-2FFF-8E3C-E934-707901F75D2A" referredColumn="ED311442-B8A2-A67B-DD66-4EC723BC7B27"/>
+</associations>
+</Column>
+<Column name="język_id_jezyka" id="42CF1DF1-A5F9-5AA3-8656-9BBBBA13EFD0">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06FDDF02-C3BD-BF89-5E1F-7E9A35B0B72B" referredColumn="71C775DD-E747-C56A-CB73-BE92BA83F8D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4F4F881-7D69-E45D-D9CB-645BD44E3F7F" name="Znajomość_jezyka_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AFC72F-50F8-9EA3-26A7-08F2CCDAF978"/>
+<colUsage columnID="42CF1DF1-A5F9-5AA3-8656-9BBBBA13EFD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F016E06-67ED-761B-91A4-809EA2F4F465" name="Znajomość_jezyka_pracownik_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>842F1DA2-A7B9-CFE9-EE30-088247F603A1</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AFC72F-50F8-9EA3-26A7-08F2CCDAF978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99966A28-2C36-1F9A-9E1D-0CA0EE440C7B" name="Znajomość_jezyka_język_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>842F1DA2-A7B9-CFE9-EE30-088247F603A1</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42CF1DF1-A5F9-5AA3-8656-9BBBBA13EFD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

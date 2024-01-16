@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F36BAFA-FD5A-F0BB-6376-1DC7BFE9EF4A" name="assoscjacja_benefitu">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<ordsAlias>relation_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stanowisko_id_stanowiska" id="069B91F9-8321-489A-97C1-407EAD6A8254">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFFB87EA-04E7-89CF-989E-F1AB1ADA7654" referredColumn="802E199A-ED79-08CA-1535-0FB96597A3EC"/>
+</associations>
+</Column>
+<Column name="benefit_id_benefitu" id="B4489C37-0A84-DF6E-67CD-EA41DD583D67">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DF6A1F3-B404-0B44-E1E3-A1E4973F1BA9" referredColumn="5C5A700C-BA11-DE62-683F-6238618724CD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0C569B9-B691-79A7-F28F-311352AF1310" name="Relation_9_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="069B91F9-8321-489A-97C1-407EAD6A8254"/>
+<colUsage columnID="B4489C37-0A84-DF6E-67CD-EA41DD583D67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F749EF8-4F93-2CF1-F309-A11ABCBA22BF" name="Relation_9_stanowisko_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>B4D8B5DE-AECC-C8B4-3874-2691361B8DCA</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="069B91F9-8321-489A-97C1-407EAD6A8254"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DA8D34C-6A10-0705-3C1B-58AE190BB766" name="Relation_9_benefit_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>B4D8B5DE-AECC-C8B4-3874-2691361B8DCA</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4489C37-0A84-DF6E-67CD-EA41DD583D67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

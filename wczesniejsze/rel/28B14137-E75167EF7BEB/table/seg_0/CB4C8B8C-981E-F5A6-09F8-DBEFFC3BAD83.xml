@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB4C8B8C-981E-F5A6-09F8-DBEFFC3BAD83" name="usługa">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>C2A897CE-EDBC-7924-1E1D-12AE4927DEF8</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produktu" id="F20F8B1F-77A5-8A88-57B3-056AB861BC38">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>634548E6-4B7B-6F42-3658-A6AEBBCD09A9</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BFCEF57-3696-8F10-6E99-FE634DE60834" referredColumn="635A9AA6-5F9D-FA59-2C96-2D2E7FDC1855"/>
+</associations>
+</Column>
+<Column name="data_zrealizowania" id="454E9DBB-BD6C-E083-ABE2-35AECCE88746">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>A2FE3606-C2B9-4370-8B32-8FFCA37F6D7C</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02A23A00-BB34-BEE3-4D34-C9E2E98906DB" name="usługa_PK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>FAABEEC0-7C9D-5AC9-DF3E-17057C6F28BF</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F20F8B1F-77A5-8A88-57B3-056AB861BC38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A740E9BC-9A10-E9D0-B10E-20B5B2D7E2BD" name="usługa_produkt_FK">
+<createdBy>janek</createdBy>
+<createdTime>2023-11-21 10:06:21 UTC</createdTime>
+<generatorID>B89380C3-26CA-4328-1DAC-BBFBE216C710</generatorID>
+<ownerDesignName>bazydanychprojekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F20F8B1F-77A5-8A88-57B3-056AB861BC38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
