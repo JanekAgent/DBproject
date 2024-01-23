@@ -35,28 +35,28 @@ ALTER TABLE asoscjacja_magazynu ADD CONSTRAINT relation_27_pk PRIMARY KEY ( towa
 
 CREATE TABLE asoscjacja_placy (
     umowa_pracownika_id_umowy NUMBER(10) NOT NULL,
-    p³aca_id_p³acy            NUMBER(12) NOT NULL
+    placa_id_placy            NUMBER(12) NOT NULL
 );
 
 ALTER TABLE asoscjacja_placy ADD CONSTRAINT relation_17_pk PRIMARY KEY ( umowa_pracownika_id_umowy,
-                                                                         p³aca_id_p³acy );
+                                                                         placa_id_placy );
 
 CREATE TABLE asoscjacja_poziomu_znajomosci ( 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    poziom_znajomoœci_jêzyka_id_znajomosci_jêzyka NUMBER(10) NOT NULL,
-    jêzyk_id_jezyka                               NUMBER(10) NOT NULL
+    poziom_znajomosci_jezyka_id_znajomosci_jezyka NUMBER(10) NOT NULL,
+    jezyk_id_jezyka                               NUMBER(10) NOT NULL
 );
 
-ALTER TABLE asoscjacja_poziomu_znajomosci ADD CONSTRAINT relation_26_pk PRIMARY KEY ( poziom_znajomoœci_jêzyka_id_znajomosci_jêzyka,
-                                                                                      jêzyk_id_jezyka );
+ALTER TABLE asoscjacja_poziomu_znajomosci ADD CONSTRAINT relation_26_pk PRIMARY KEY ( poziom_znajomosci_jezyka_id_znajomosci_jezyka,
+                                                                                      jezyk_id_jezyka );
 
 CREATE TABLE asoscjacja_wyksztalcenia (
     pracownik_id_prac              NUMBER(10) NOT NULL,
-    wykszta³cenie_id_wykszta³cenia NUMBER(10) NOT NULL
+    wyksztalcenie_id_wyksztalcenia NUMBER(10) NOT NULL
 );
 
 ALTER TABLE asoscjacja_wyksztalcenia ADD CONSTRAINT relation_1_pk PRIMARY KEY ( pracownik_id_prac,
-                                                                                wykszta³cenie_id_wykszta³cenia );
+                                                                                wyksztalcenie_id_wyksztalcenia );
 
 CREATE TABLE assoscjacja_benefitu (
     stanowisko_id_stanowiska NUMBER(10) NOT NULL,
@@ -75,45 +75,45 @@ CREATE TABLE benefit (
 
 ALTER TABLE benefit ADD CONSTRAINT benefit_pk PRIMARY KEY ( id_benefitu );
 
-CREATE TABLE dzia³ (
-    id_dzia³u               NUMBER(10) NOT NULL,
+CREATE TABLE dzial (
+    id_dzialu               NUMBER(10) NOT NULL,
     nazwa                   VARCHAR2(50) NOT NULL,
     adres                   VARCHAR2(100) NOT NULL,
-    kirownik_dzia³u_id_prac NUMBER(10) NOT NULL
+    kirownik_dzialu_id_prac NUMBER(10) NOT NULL
 );
 
-ALTER TABLE dzia³ ADD CONSTRAINT dzia³_pk PRIMARY KEY ( id_dzia³u );
+ALTER TABLE dzial ADD CONSTRAINT dzial_pk PRIMARY KEY ( id_dzialu );
 
 CREATE TABLE faktura (
     id_faktury                            NUMBER(10) NOT NULL,
     data_wystawienia_faktury              DATE NOT NULL,
-    data_p³atnoœci                        DATE NOT NULL,
+    data_platnosci                        DATE NOT NULL,
     typ_faktury                           VARCHAR2(50) NOT NULL,
-    rodzaj_p³atnoœci                      VARCHAR2(100) NOT NULL,
-    wartoœæ_netto                         NUMBER(10, 2) NOT NULL,
-    wartoœæ_brutto                        NUMBER(10, 2) NOT NULL,
+    rodzaj_platnosci                      VARCHAR2(100) NOT NULL,
+    wartosc_netto                         NUMBER(10, 2) NOT NULL,
+    wartosc_brutto                        NUMBER(10, 2) NOT NULL,
     kontrachent_id_kontrachenta           NUMBER(10),
     pracownik_id_prac                     NUMBER(10) NOT NULL, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    ksiêga_przychodu_i_rozchodu_id_ksiêgi NUMBER(10)
+    ksiega_przychodu_i_rozchodu_id_ksiegi NUMBER(10)
 );
 
 ALTER TABLE faktura ADD CONSTRAINT faktura_pk PRIMARY KEY ( id_faktury );
 
-CREATE TABLE jêzyk (
+CREATE TABLE jezyk (
     id_jezyka NUMBER(10) NOT NULL,
     nazwa     VARCHAR2(50) NOT NULL,
     podtyp    VARCHAR2(50)
 );
 
-ALTER TABLE jêzyk ADD CONSTRAINT jêzyk_pk PRIMARY KEY ( id_jezyka );
+ALTER TABLE jezyk ADD CONSTRAINT jezyk_pk PRIMARY KEY ( id_jezyka );
 
-CREATE TABLE kirownik_dzia³u (
+CREATE TABLE kirownik_dzialu (
     id_prac                      NUMBER(10) NOT NULL,
     numer_telefonu_stacjonarnego VARCHAR2(20) NOT NULL
 );
 
-ALTER TABLE kirownik_dzia³u ADD CONSTRAINT kirownik_dzia³u_pk PRIMARY KEY ( id_prac );
+ALTER TABLE kirownik_dzialu ADD CONSTRAINT kirownik_dzialu_pk PRIMARY KEY ( id_prac );
 
 CREATE TABLE kontrachent (
     id_kontrachenta         NUMBER(10) NOT NULL,
@@ -129,25 +129,25 @@ ALTER TABLE kontrachent ADD CONSTRAINT kontrachent_pk PRIMARY KEY ( id_kontrache
 CREATE TABLE koszt_zus (
     id_kosztu_zus      NUMBER(10) NOT NULL,
     okres              VARCHAR2(100) NOT NULL,
-    sk³adka_zdrowotna  NUMBER(10, 2) NOT NULL,
-    sk³adka_emerytalna NUMBER(10, 2) NOT NULL,
-    sk³adka_rentowa    NUMBER(10, 2) NOT NULL,
-    sk³adka_chorobowa  NUMBER(10, 2) NOT NULL,
-    sk³adka_wypadkowa  NUMBER(10, 2) NOT NULL,
+    skladka_zdrowotna  NUMBER(10, 2) NOT NULL,
+    skladka_emerytalna NUMBER(10, 2) NOT NULL,
+    skladka_rentowa    NUMBER(10, 2) NOT NULL,
+    skladka_chorobowa  NUMBER(10, 2) NOT NULL,
+    skladka_wypadkowa  NUMBER(10, 2) NOT NULL,
     fundusz_pracy      NUMBER(10, 2) NOT NULL
 );
 
 ALTER TABLE koszt_zus ADD CONSTRAINT koszt_zus_pk PRIMARY KEY ( id_kosztu_zus );
 
-CREATE TABLE ksiêga_przychodu_i_rozchodu (
-    id_ksiêgi               NUMBER(10) NOT NULL,
+CREATE TABLE ksiega_przychodu_i_rozchodu (
+    id_ksiegi               NUMBER(10) NOT NULL,
     okres                   VARCHAR2(100) NOT NULL,
     data_stworzenia         DATE NOT NULL,
-    kto_stworzy³            VARCHAR2(50) NOT NULL,
+    kto_stworzyl            VARCHAR2(50) NOT NULL,
     koszt_zus_id_kosztu_zus NUMBER(10) NOT NULL
 );
 
-ALTER TABLE ksiêga_przychodu_i_rozchodu ADD CONSTRAINT ksiêga_przychodu_i_rozchodu_pk PRIMARY KEY ( id_ksiêgi );
+ALTER TABLE ksiega_przychodu_i_rozchodu ADD CONSTRAINT ksiega_przychodu_i_rozchodu_pk PRIMARY KEY ( id_ksiegi );
 
 CREATE TABLE magazyn (
     id_magazynu NUMBER(10) NOT NULL,
@@ -157,24 +157,24 @@ CREATE TABLE magazyn (
 
 ALTER TABLE magazyn ADD CONSTRAINT magazyn_pk PRIMARY KEY ( id_magazynu );
 
-CREATE TABLE p³aca (
-    id_p³acy                              NUMBER(12) NOT NULL,
+CREATE TABLE placa (
+    id_placy                              NUMBER(12) NOT NULL,
     liczba_przepracowanych_godzin         NUMBER(10) NOT NULL,
     dodatki                               NUMBER(10, 2),
     nadgodziny                            NUMBER(10),
     ostateczna_kwota                      NUMBER(10, 2) NOT NULL, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    ksiêga_przychodu_i_rozchodu_id_ksiêgi NUMBER(10)
+    ksiega_przychodu_i_rozchodu_id_ksiegi NUMBER(10)
 );
 
-ALTER TABLE p³aca ADD CONSTRAINT p³aca_pk PRIMARY KEY ( id_p³acy );
+ALTER TABLE placa ADD CONSTRAINT placa_pk PRIMARY KEY ( id_placy );
 
-CREATE TABLE poziom_znajomoœci_jêzyka (
-    id_znajomosci_jêzyka NUMBER(10) NOT NULL,
+CREATE TABLE poziom_znajomosci_jezyka (
+    id_znajomosci_jezyka NUMBER(10) NOT NULL,
     nazwa                VARCHAR2(50)
 );
 
-ALTER TABLE poziom_znajomoœci_jêzyka ADD CONSTRAINT poziom_znajomoœci_jêzyka_pk PRIMARY KEY ( id_znajomosci_jêzyka );
+ALTER TABLE poziom_znajomosci_jezyka ADD CONSTRAINT poziom_znajomosci_jezyka_pk PRIMARY KEY ( id_znajomosci_jezyka );
 
 CREATE TABLE pracownik (
     id_prac               NUMBER(10) NOT NULL,
@@ -182,11 +182,11 @@ CREATE TABLE pracownik (
     nazwisko              VARCHAR2(50) NOT NULL,
     data_urodzenia        DATE NOT NULL,
     pesel                 NUMBER(11),
-    p³eæ                  VARCHAR2(2),
+    plec                  VARCHAR2(2),
     drugie_imie           VARCHAR2(50),
     nazwisko_rodowe       VARCHAR2(50),
     numer_konta_bankowego NUMBER(50),
-    dzia³_id_dzia³u       NUMBER(10) NOT NULL,
+    dzial_id_dzialu       NUMBER(10) NOT NULL,
     adres                 VARCHAR2(100)
 );
 
@@ -209,14 +209,14 @@ CREATE TABLE relation_7 (
 ALTER TABLE relation_7 ADD CONSTRAINT relation_7_pk PRIMARY KEY ( stanowisko_id_stanowiska,
                                                                   uprawnienia_id_uprawnienia );
 
-CREATE TABLE rodzaj_towarów (
+CREATE TABLE rodzaj_towarow (
     id_rodzaju_towaru   NUMBER(10) NOT NULL,
     nazwa               VARCHAR2(100) NOT NULL,
     stawka_vat          NUMBER(10, 2) NOT NULL,
     produkt_id_produktu NUMBER(10) NOT NULL
 );
 
-ALTER TABLE rodzaj_towarów ADD CONSTRAINT rodzaj_towarów_pk PRIMARY KEY ( id_rodzaju_towaru,
+ALTER TABLE rodzaj_towarow ADD CONSTRAINT rodzaj_towarow_pk PRIMARY KEY ( id_rodzaju_towaru,
                                                                           stawka_vat );
 
 CREATE TABLE stanowisko (
@@ -226,19 +226,19 @@ CREATE TABLE stanowisko (
 
 ALTER TABLE stanowisko ADD CONSTRAINT stanowisko_pk PRIMARY KEY ( id_stanowiska );
 
-CREATE TABLE œrodek_trwa³y (
+CREATE TABLE srodek_trwaly (
     id_produktu        NUMBER(10) NOT NULL,
     stawka_amortyzacji VARCHAR2(100)
 );
 
-ALTER TABLE œrodek_trwa³y ADD CONSTRAINT œrodek_trwa³y_pk PRIMARY KEY ( id_produktu );
+ALTER TABLE srodek_trwaly ADD CONSTRAINT srodek_trwaly_pk PRIMARY KEY ( id_produktu );
 
 CREATE TABLE towar (
     id_produktu                                   NUMBER(10) NOT NULL,
-    data_przyjêcia_na_stan                        DATE,
+    data_przyjecia_na_stan                        DATE,
     data_zbycia                                   DATE, 
 --  ERROR: Column name length exceeds maximum allowed length(30) 
-    czy_wrzucamy_go_do_ewidencji_œrodków_trwa³ych CHAR(1)
+    czy_wrzucamy_go_do_ewidencji_srodkow_trwalych CHAR(1)
 );
 
 ALTER TABLE towar ADD CONSTRAINT towar_pk PRIMARY KEY ( id_produktu );
@@ -247,9 +247,9 @@ CREATE TABLE umowa_pracownika (
     id_umowy                     NUMBER(10) NOT NULL,
     rodzaj_umowy                 VARCHAR2(50) NOT NULL,
     data_zawarcia                DATE NOT NULL,
-    data_zakoñczenia             DATE,
+    data_zakonczenia             DATE,
     rodzaj_zatrudnienia          VARCHAR2(50) NOT NULL,
-    wielkoœc_etatu               VARCHAR2(50) NOT NULL,
+    wielkosc_etatu               VARCHAR2(50) NOT NULL,
     stawka_godzinowa             NUMBER(10, 2),
     zatrudnienie_zatrudnienie_id NUMBER NOT NULL
 );
@@ -263,27 +263,27 @@ CREATE TABLE uprawnienia (
 
 ALTER TABLE uprawnienia ADD CONSTRAINT uprawnienia_pk PRIMARY KEY ( id_uprawnienia );
 
-CREATE TABLE us³uga (
+CREATE TABLE usluga (
     id_produktu        NUMBER(10) NOT NULL,
     data_zrealizowania DATE
 );
 
-ALTER TABLE us³uga ADD CONSTRAINT us³uga_pk PRIMARY KEY ( id_produktu );
+ALTER TABLE usluga ADD CONSTRAINT usluga_pk PRIMARY KEY ( id_produktu );
 
-CREATE TABLE wykszta³cenie (
-    id_wykszta³cenia NUMBER(10) NOT NULL,
+CREATE TABLE wyksztalcenie (
+    id_wyksztalcenia NUMBER(10) NOT NULL,
     poziom           VARCHAR2(50) NOT NULL,
     nazwa            VARCHAR2(100) NOT NULL,
     data_uzyskania   DATE NOT NULL,
-    ukoñczona_szkola VARCHAR2(100) NOT NULL,
+    ukonczona_szkola VARCHAR2(100) NOT NULL,
     podtyp           VARCHAR2(100)
 );
 
-ALTER TABLE wykszta³cenie ADD CONSTRAINT wykszta³cenie_pk PRIMARY KEY ( id_wykszta³cenia );
+ALTER TABLE wyksztalcenie ADD CONSTRAINT wyksztalcenie_pk PRIMARY KEY ( id_wyksztalcenia );
 
 CREATE TABLE zatrudnienie (
-    data_rozpoczêcia DATE NOT NULL,
-    data_zakoñczenia DATE,
+    data_rozpoczecia DATE NOT NULL,
+    data_zakonczenia DATE,
     zatrudnienie_id  NUMBER NOT NULL
 );
 
@@ -297,17 +297,17 @@ CREATE TABLE zatrudnieniev1 (
 ALTER TABLE zatrudnieniev1 ADD CONSTRAINT zatrudnieniev1_pk PRIMARY KEY ( pracownik_id_prac,
                                                                           zatrudnienie_zatrudnienie_id );
 
-CREATE TABLE znajomoœæ_jezyka (
+CREATE TABLE znajomosc_jezyka (
     pracownik_id_prac NUMBER(10) NOT NULL,
-    jêzyk_id_jezyka   NUMBER(10) NOT NULL
+    jezyk_id_jezyka   NUMBER(10) NOT NULL
 );
 
-ALTER TABLE znajomoœæ_jezyka ADD CONSTRAINT znajomoœæ_jezyka_pk PRIMARY KEY ( pracownik_id_prac,
-                                                                              jêzyk_id_jezyka );
+ALTER TABLE znajomosc_jezyka ADD CONSTRAINT znajomosc_jezyka_pk PRIMARY KEY ( pracownik_id_prac,
+                                                                              jezyk_id_jezyka );
 
-ALTER TABLE dzia³
-    ADD CONSTRAINT dzia³_kirownik_dzia³u_fk FOREIGN KEY ( kirownik_dzia³u_id_prac )
-        REFERENCES kirownik_dzia³u ( id_prac );
+ALTER TABLE dzial
+    ADD CONSTRAINT dzial_kirownik_dzialu_fk FOREIGN KEY ( kirownik_dzialu_id_prac )
+        REFERENCES kirownik_dzialu ( id_prac );
 
 ALTER TABLE faktura
     ADD CONSTRAINT faktura_kontrachent_fk FOREIGN KEY ( kontrachent_id_kontrachenta )
@@ -315,30 +315,30 @@ ALTER TABLE faktura
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE faktura
-    ADD CONSTRAINT faktura_ksiêga_przychodu_i_rozchodu_fk FOREIGN KEY ( ksiêga_przychodu_i_rozchodu_id_ksiêgi )
-        REFERENCES ksiêga_przychodu_i_rozchodu ( id_ksiêgi );
+    ADD CONSTRAINT faktura_ksiega_przychodu_i_rozchodu_fk FOREIGN KEY ( ksiega_przychodu_i_rozchodu_id_ksiegi )
+        REFERENCES ksiega_przychodu_i_rozchodu ( id_ksiegi );
 
 ALTER TABLE faktura
     ADD CONSTRAINT faktura_pracownik_fk FOREIGN KEY ( pracownik_id_prac )
         REFERENCES pracownik ( id_prac );
 
-ALTER TABLE kirownik_dzia³u
-    ADD CONSTRAINT kirownik_dzia³u_pracownik_fk FOREIGN KEY ( id_prac )
+ALTER TABLE kirownik_dzialu
+    ADD CONSTRAINT kirownik_dzialu_pracownik_fk FOREIGN KEY ( id_prac )
         REFERENCES pracownik ( id_prac );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE ksiêga_przychodu_i_rozchodu
-    ADD CONSTRAINT ksiêga_przychodu_i_rozchodu_koszt_zus_fk FOREIGN KEY ( koszt_zus_id_kosztu_zus )
+ALTER TABLE ksiega_przychodu_i_rozchodu
+    ADD CONSTRAINT ksiega_przychodu_i_rozchodu_koszt_zus_fk FOREIGN KEY ( koszt_zus_id_kosztu_zus )
         REFERENCES koszt_zus ( id_kosztu_zus );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE p³aca
-    ADD CONSTRAINT p³aca_ksiêga_przychodu_i_rozchodu_fk FOREIGN KEY ( ksiêga_przychodu_i_rozchodu_id_ksiêgi )
-        REFERENCES ksiêga_przychodu_i_rozchodu ( id_ksiêgi );
+ALTER TABLE placa
+    ADD CONSTRAINT placa_ksiega_przychodu_i_rozchodu_fk FOREIGN KEY ( ksiega_przychodu_i_rozchodu_id_ksiegi )
+        REFERENCES ksiega_przychodu_i_rozchodu ( id_ksiegi );
 
 ALTER TABLE pracownik
-    ADD CONSTRAINT pracownik_dzia³_fk FOREIGN KEY ( dzia³_id_dzia³u )
-        REFERENCES dzia³ ( id_dzia³u );
+    ADD CONSTRAINT pracownik_dzial_fk FOREIGN KEY ( dzial_id_dzialu )
+        REFERENCES dzial ( id_dzialu );
 
 ALTER TABLE produkt
     ADD CONSTRAINT produkt_faktura_fk FOREIGN KEY ( faktura_id_faktury )
@@ -349,12 +349,12 @@ ALTER TABLE asoscjacja_wyksztalcenia
         REFERENCES pracownik ( id_prac );
 
 ALTER TABLE asoscjacja_wyksztalcenia
-    ADD CONSTRAINT relation_1_wykszta³cenie_fk FOREIGN KEY ( wykszta³cenie_id_wykszta³cenia )
-        REFERENCES wykszta³cenie ( id_wykszta³cenia );
+    ADD CONSTRAINT relation_1_wyksztalcenie_fk FOREIGN KEY ( wyksztalcenie_id_wyksztalcenia )
+        REFERENCES wyksztalcenie ( id_wyksztalcenia );
 
 ALTER TABLE asoscjacja_placy
-    ADD CONSTRAINT relation_17_p³aca_fk FOREIGN KEY ( p³aca_id_p³acy )
-        REFERENCES p³aca ( id_p³acy );
+    ADD CONSTRAINT relation_17_placa_fk FOREIGN KEY ( placa_id_placy )
+        REFERENCES placa ( id_placy );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE asoscjacja_placy
@@ -362,13 +362,13 @@ ALTER TABLE asoscjacja_placy
         REFERENCES umowa_pracownika ( id_umowy );
 
 ALTER TABLE asoscjacja_poziomu_znajomosci
-    ADD CONSTRAINT relation_26_jêzyk_fk FOREIGN KEY ( jêzyk_id_jezyka )
-        REFERENCES jêzyk ( id_jezyka );
+    ADD CONSTRAINT relation_26_jezyk_fk FOREIGN KEY ( jezyk_id_jezyka )
+        REFERENCES jezyk ( id_jezyka );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE asoscjacja_poziomu_znajomosci
-    ADD CONSTRAINT relation_26_poziom_znajomoœci_jêzyka_fk FOREIGN KEY ( poziom_znajomoœci_jêzyka_id_znajomosci_jêzyka )
-        REFERENCES poziom_znajomoœci_jêzyka ( id_znajomosci_jêzyka );
+    ADD CONSTRAINT relation_26_poziom_znajomosci_jezyka_fk FOREIGN KEY ( poziom_znajomosci_jezyka_id_znajomosci_jezyka )
+        REFERENCES poziom_znajomosci_jezyka ( id_znajomosci_jezyka );
 
 ALTER TABLE asoscjacja_magazynu
     ADD CONSTRAINT relation_27_magazyn_fk FOREIGN KEY ( magazyn_id_magazynu )
@@ -410,12 +410,12 @@ ALTER TABLE assoscjacja_benefitu
     ADD CONSTRAINT relation_9_stanowisko_fk FOREIGN KEY ( stanowisko_id_stanowiska )
         REFERENCES stanowisko ( id_stanowiska );
 
-ALTER TABLE rodzaj_towarów
-    ADD CONSTRAINT rodzaj_towarów_produkt_fk FOREIGN KEY ( produkt_id_produktu )
+ALTER TABLE rodzaj_towarow
+    ADD CONSTRAINT rodzaj_towarow_produkt_fk FOREIGN KEY ( produkt_id_produktu )
         REFERENCES produkt ( id_produktu );
 
-ALTER TABLE œrodek_trwa³y
-    ADD CONSTRAINT œrodek_trwa³y_towar_fk FOREIGN KEY ( id_produktu )
+ALTER TABLE srodek_trwaly
+    ADD CONSTRAINT srodek_trwaly_towar_fk FOREIGN KEY ( id_produktu )
         REFERENCES towar ( id_produktu );
 
 ALTER TABLE towar
@@ -427,8 +427,8 @@ ALTER TABLE umowa_pracownika
     ADD CONSTRAINT umowa_pracownika_zatrudnienie_fk FOREIGN KEY ( zatrudnienie_zatrudnienie_id )
         REFERENCES zatrudnienie ( zatrudnienie_id );
 
-ALTER TABLE us³uga
-    ADD CONSTRAINT us³uga_produkt_fk FOREIGN KEY ( id_produktu )
+ALTER TABLE usluga
+    ADD CONSTRAINT usluga_produkt_fk FOREIGN KEY ( id_produktu )
         REFERENCES produkt ( id_produktu );
 
 ALTER TABLE zatrudnieniev1
@@ -439,12 +439,12 @@ ALTER TABLE zatrudnieniev1
     ADD CONSTRAINT zatrudnieniev1_zatrudnienie_fk FOREIGN KEY ( zatrudnienie_zatrudnienie_id )
         REFERENCES zatrudnienie ( zatrudnienie_id );
 
-ALTER TABLE znajomoœæ_jezyka
-    ADD CONSTRAINT znajomoœæ_jezyka_jêzyk_fk FOREIGN KEY ( jêzyk_id_jezyka )
-        REFERENCES jêzyk ( id_jezyka );
+ALTER TABLE znajomosc_jezyka
+    ADD CONSTRAINT znajomosc_jezyka_jezyk_fk FOREIGN KEY ( jezyk_id_jezyka )
+        REFERENCES jezyk ( id_jezyka );
 
-ALTER TABLE znajomoœæ_jezyka
-    ADD CONSTRAINT znajomoœæ_jezyka_pracownik_fk FOREIGN KEY ( pracownik_id_prac )
+ALTER TABLE znajomosc_jezyka
+    ADD CONSTRAINT znajomosc_jezyka_pracownik_fk FOREIGN KEY ( pracownik_id_prac )
         REFERENCES pracownik ( id_prac );
 
 --  ERROR: No Discriminator Column found in Arc FKArc_9 - constraint trigger for Arc cannot be generated 
